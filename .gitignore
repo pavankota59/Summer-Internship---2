@@ -1,0 +1,27 @@
+# Internship course guides (do not push to Github remote)
+01_Workflow_Guide.md
+02_Technical_Problem_Compendium.md
+03_Deliverables_Specification.md
+
+# Python local settings & environments
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# Cache & build files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+
+# IDE / Editor configuration files
+.vscode/
+.idea/
+
+# OS specific files
+Thumbs.db
+desktop.ini
