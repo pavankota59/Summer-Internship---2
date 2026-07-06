@@ -7,8 +7,14 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.agents.financial_data import run_financial_data_agent
 
 def main():
+    # Configure stdout to use utf-8 encoding to avoid Windows cp1252 console printing errors
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass  # Fallback if reconfigure is not available
+        
     # Tickers across Indian large-caps
-    tickers = ["RELIANCE.NS", "TCS.NS", "TATAMOTORS.NS"]
+    tickers = ["RELIANCE.NS", "TCS.NS", "INFY.NS"]
     
     print("=" * 70)
     print("ALPHAGENTS — FINANCIAL DATA AGENT VERIFICATION RUN")
